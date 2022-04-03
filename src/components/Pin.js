@@ -11,7 +11,7 @@ const Pin = (props) => {
     }
   }, [image]);
   return (
-    <View style={{ marginHorizontal: 10 }}>
+    <View style={{ marginHorizontal: 4 }}>
       <View>
         <Image
           source={{
