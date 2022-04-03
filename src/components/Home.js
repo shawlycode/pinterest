@@ -1,25 +1,28 @@
 import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import React from "react";
 import Pin from "./Pin";
+import Data from "../constants/Data";
 
 const Home = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <Pin
-          pin={{
-            title: "Not Jus Dev Hoodie",
-            image:
-              "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/3.jpeg",
-          }}
-        />
-        <Pin
-          pin={{
-            title: "Programmer working on laptop computer in office studio",
-            image:
-              "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
-          }}
-        />
+        <View style={{ flex: 1 }}>
+          {/* <Pin pin={Data[0]} />
+          <Pin pin={Data[2]} />
+          <Pin pin={Data[4]} /> */}
+          {Data.filter((item, index) => index % 2 === 0).map((Data) => (
+            <Pin pin={Data} key={Data.id} />
+          ))}
+        </View>
+        <View style={{ flex: 1 }}>
+          {/* <Pin pin={Data[1]} />
+          <Pin pin={Data[3]} />
+          <Pin pin={Data[5]} /> */}
+          {Data.filter((item, index) => index % 2 === 1).map((Data) => (
+            <Pin pin={Data} key={Data.id} />
+          ))}
+        </View>
       </View>
     </ScrollView>
   );
@@ -29,6 +32,6 @@ export default Home;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexDirection: "row",
   },
 });
