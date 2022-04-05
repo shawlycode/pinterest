@@ -2,7 +2,6 @@ import { createMaterialBottomTabNavigator } from "@react-navigation/material-bot
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Home from "../components/Home";
 import Profile from "../components/Profile";
-import CreatePin from "../components/CreatePin";
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -25,7 +24,7 @@ function Tabs() {
           showLabel: false,
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="createPin"
         component={CreatePin}
         options={{
@@ -33,7 +32,7 @@ function Tabs() {
             <MaterialCommunityIcons name="plus" color={color} size={28} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Profile"
         component={Profile}

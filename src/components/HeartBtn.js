@@ -7,7 +7,7 @@ const HeartBtn = () => {
   return (
     <View>
       <TouchableOpacity style={styles.heartBtn} onPress={onLike}>
-        <AntDesign name="hearto" size={30} color="red" />
+        <AntDesign name="hearto" size={20} color="red" />
       </TouchableOpacity>
     </View>
   );
@@ -17,8 +17,8 @@ export default HeartBtn;
 
 const styles = StyleSheet.create({
   heartBtn: {
-    width: 50,
-    height: 50,
+    width: 30,
+    height: 30,
     backgroundColor: "#d3cfd4",
     borderRadius: 100,
     position: "absolute",
