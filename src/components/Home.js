@@ -1,37 +1,8 @@
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
-import React from "react";
-import Pin from "./Pin";
+import MasonaryList from "./MasonaryList";
 import Data from "../constants/Data";
 
 const Home = () => {
-  return (
-    <ScrollView>
-      <View style={styles.container}>
-        <View style={{ flex: 1 }}>
-          {/* <Pin pin={Data[0]} />
-          <Pin pin={Data[2]} />
-          <Pin pin={Data[4]} /> */}
-          {Data.filter((item, index) => index % 2 === 0).map((Data) => (
-            <Pin pin={Data} key={Data.id} />
-          ))}
-        </View>
-        <View style={{ flex: 1 }}>
-          {/* <Pin pin={Data[1]} />
-          <Pin pin={Data[3]} />
-          <Pin pin={Data[5]} /> */}
-          {Data.filter((item, index) => index % 2 === 1).map((Data) => (
-            <Pin pin={Data} key={Data.id} />
-          ))}
-        </View>
-      </View>
-    </ScrollView>
-  );
+  return <MasonaryList pin={Data} />;
 };
 
 export default Home;
-
-const styles = StyleSheet.create({
-  container: {
-    flexDirection: "row",
-  },
-});
