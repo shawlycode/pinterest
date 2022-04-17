@@ -2,63 +2,79 @@ export default [
   {
     id: "0",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/0.jpeg",
+      "https://priyoshopbackup.blob.core.windows.net/priyoshop/content/Images/Thumbs/0232104_leather-bag-for-women-jlb-010_415.jpeg",
     title: "notJust Dev Hoodie",
   },
   {
     id: "1",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/1.jpeg",
+      "https://cdn-images.farfetch-contents.com/17/89/30/66/17893066_37725003_1000.jpg",
     title: "Programmer working on laptop computer in office studio",
   },
   {
     id: "2",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/2.jpeg",
-    title:
-      "computer setup | computer setup idea | black wallpaper #computersetupideas",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlTyQq3yQClIKja2-C0MGysVH56XYdnyw5HQ&usqp=CAU",
+    title: "computer setup | computer setup idea | black wallpaper ",
   },
   {
     id: "3",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/3.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Pe2DN0-i3NQh4xvEjESc75S0d6av6vHxaw&usqp=CAU",
     title: "",
   },
   {
     id: "4",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/4.jpeg",
+      "https://www.ghanabusinessnews.com/wp-content/uploads/2021/10/Bra.jpg",
     title: "White Tesla ",
   },
   {
     id: "5",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/5.jpeg",
+      "https://pictures-nigeria.jijistatic.com/89121583_ODEwLTEwODAtZTUwNjZkMDUxYQ.jpg",
     title: "Hustle harder",
   },
   {
     id: "6",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/6.jpeg",
+      "https://img.mytheresa.com/1088/1088/66/jpeg/catalog/product/8d/P00579001.jpg",
     title: "Studio",
   },
   {
     id: "7",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/7.jpeg",
+      "https://pictures-nigeria.jijistatic.com/82222239_MTEyNS0xNTAwLThkYjBjNzAyYTg.jpg",
     title: "The Flying tortoise",
   },
   {
     id: "8",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/8.jpeg",
+      "https://img.buzzfeed.com/buzzfeed-static/static/2019-05/14/10/asset/buzzfeed-prod-web-03/sub-buzz-11215-1557845598-1.png",
+    title:
+      "Harley Davidson Sportster Iron 883 Custom ~ Rider & Helmet - ModifiedX",
+  },
+  {
+    id: "81",
+    image: "https://images.olx.com.pk/thumbnails/238180454-240x180.jpeg",
     title:
       "Harley Davidson Sportster Iron 883 Custom ~ Rider & Helmet - ModifiedX",
   },
   {
     id: "9",
     image:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/9.jpeg",
+      "https://images.cowboybootsi.com/l-m/women-s-tillston-6-inch-high-heel.jpg",
+    title: "Tesla Cybertruck",
+  },
+  {
+    id: "29",
+    image:
+      "https://i.pinimg.com/236x/71/8b/6f/718b6ffba15233dd800c86376b61acf6.jpg",
+    title: "Tesla Cybertruck",
+  },
+  {
+    id: "49",
+    image: "https://i.ebayimg.com/images/g/xckAAOSwkTxfhJBz/s-l400.jpg",
     title: "Tesla Cybertruck",
   },
 ];

@@ -28,7 +28,7 @@ const Pin = (props) => {
   };
   return (
     <SafeAreaView>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <TouchableOpacity style={{ marginHorizontal: 6 }} onPress={details}>
         <View>
           <Image
@@ -44,7 +44,7 @@ const Pin = (props) => {
             fontSize: 20,
             fontWeight: "bold",
             padding: 10,
-            color: "#181818",
+            color: "#ffb703",
           }}
           numberOfLines={1}
         >
@@ -60,6 +60,7 @@ export default Pin;
 const styles = StyleSheet.create({
   img: {
     width: "100%",
+
     borderRadius: 20,
   },
 });

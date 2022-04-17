@@ -1,9 +1,13 @@
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import Home from "../components/Home";
-import Profile from "../components/Profile";
+import Home from "../Screens/Home";
+import Profile from "../Screens/Profile";
+import { FontAwesome } from "@expo/vector-icons";
 
-const Tab = createMaterialBottomTabNavigator();
+import CreatePin from "../Screens/CreatePin";
+import Basket from "../Screens/Basket";
+
+const Tab = createBottomTabNavigator();
 
 function Tabs() {
   return (
@@ -11,6 +15,7 @@ function Tabs() {
       initialRouteName="Home"
       activeColor="#e91e63"
       screenOptions={{
+        tabBarShowLabel: false,
         headerShown: false,
       }}
     >
@@ -18,27 +23,36 @@ function Tabs() {
         name="Home"
         component={Home}
         options={{
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={28} />
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="home" color={"grey"} size={35} />
           ),
           showLabel: false,
         }}
       />
-      {/* <Tab.Screen
-        name="createPin"
+      <Tab.Screen
+        name="CreatePin"
         component={CreatePin}
         options={{
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="plus" color={color} size={28} />
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="plus" color={"grey"} size={35} />
           ),
         }}
-      /> */}
+      />
       <Tab.Screen
         name="Profile"
         component={Profile}
         options={{
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="account" color={color} size={28} />
+          tabBarIcon: () => (
+            <MaterialCommunityIcons name="account" color={"grey"} size={35} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Basket"
+        component={Basket}
+        options={{
+          tabBarIcon: () => (
+            <FontAwesome name="shopping-basket" size={24} color="black" />
           ),
         }}
       />
