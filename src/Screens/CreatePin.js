@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Image, View, Platform, TextInput } from "react-native";
 import * as ImagePicker from "expo-image-picker";
+// import { connect } from "react-redux";
+// import { selectedImageAction } from "../store/Actions/Action";
 
 export default function CreatePin() {
   const [image, setImage] = useState(null);

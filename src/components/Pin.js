@@ -44,7 +44,7 @@ const Pin = (props) => {
             fontSize: 20,
             fontWeight: "bold",
             padding: 10,
-            color: "#ffb703",
+            color: "#000",
           }}
           numberOfLines={1}
         >

@@ -3,7 +3,7 @@ import React from "react";
 import Button from "../components/Button";
 const Home = ({ title, navigation }) => {
   return (
-    <ScrollView style={{ backgroundColor: "#023047" }}>
+    <ScrollView style={{ backgroundColor: "#fff" }}>
       <View style={styles.container}>
         <View
           style={{
