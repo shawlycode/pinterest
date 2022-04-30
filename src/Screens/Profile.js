@@ -11,13 +11,13 @@ import Data from "../constants/Data";
 import MasonaryList from "../components/MasonaryList";
 import { FontAwesome, Entypo, Feather } from "@expo/vector-icons";
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
   const [active, setActive] = useState(true);
   return (
     <ScrollView style={{ flex: 1, paddingTop: 50 }}>
       <View style={styles.container}>
         <View style={styles.icons}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Feather
               name="arrow-left"
               size={34}
