@@ -1,10 +1,17 @@
-import React, { useEffect } from "react";
-
 import Router from "./src/Navigations/Route";
-// import { Provider } from "react-redux";
-// import { createStore } from "redux";
 
-// const store = createStore(MyShopTusReducer);
+import { NhostClient, NhostReactProvider } from "@nhost/react";
+import * as SecureStore from "expo-secure-store";
+
+const nhost = new NhostClient({
+  backendUrl: " https://sicidgzhdkitxbxrpjrn.nhost.run",
+  clientStorageType: "expo-secure-storage",
+  clientStorage: "SecureStore",
+});
 export default function App() {
-  return <Router />;
+  return (
+    <NhostReactProvider nhost={nhost}>
+      <Router />;
+    </NhostReactProvider>
+  );
 }
